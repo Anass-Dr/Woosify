@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Flow+Block&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply max-w-7xl px-6 md:px-10 mx-auto;
+}
+
+header,
+#pricing {
+  background: radial-gradient(15% 15% at 8% 50%, #4c00ff3b 1%, #ff000000 99%),
+    radial-gradient(33% 33% at -1% 43%, #00c1ff47 1%, #ff000000 99%),
+    radial-gradient(15% 15% at 71% 43%, #00e4ff3b 1%, #ff000000 99%),
+    radial-gradient(20% 20% at 82% 77%, #0039ff3d 1%, #ff000000 99%),
+    radial-gradient(40% 40% at 89% 61%, #5800ff4a 1%, #ff000000 99%);
+}
+
+.btn {
+  @apply text-white dark:text-black bg-black dark:bg-white dark:font-bold hover:bg-gray-700 dark:hover:opacity-90 py-2 md:py-3 px-5 md:px-6 rounded-3xl;
+}
+.btn-outline {
+  @apply text-black dark:text-white bg-transparent border-2 dark:font-medium font-bold border-black dark:border-white hover:text-white hover:bg-black !important;
+}
+.btn-sm {
+  @apply text-sm py-2 px-4 !important;
+}
+
+#theme__input:checked ~ svg {
+  opacity: 0;
+}
+#theme__input:checked ~ i {
+  opacity: 1;
+}
+#theme__input ~ div {
+  transition: all 0.4s ease;
+}
+#theme__input:checked ~ div {
+  left: 16px;
+}
+
+.qst__span {
+  width: 2em;
+}
+.qst__span::before,
+.qst__span::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 1em;
+  height: 2px;
+  right: 0;
+}
+.qst__span::after {
+  transform: rotate(90deg);
+  transition: all 0.4s ease;
+}
+
+footer span {
+  @apply md:text-lg font-bold;
+}
+footer ul {
+  @apply flex flex-col gap-5 mt-5;
+}
+footer li {
+  @apply text-sm md:text-base font-semibold dark:text-slate-300 dark:font-normal;
+}
+
+.card {
+  transition: all 0.6s ease;
+}
+.hidden--card {
+  transform: translateY(4rem);
+  opacity: 0;
+}

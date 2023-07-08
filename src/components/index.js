@@ -1,0 +1,9 @@
+export { default as feature1 } from "/images/feature-1.svg";
+export { default as checkIcon } from "/images/check.svg";
+export { default as cloudIcon } from "/images/cloud.svg";
+export { default as layoutIcon } from "/images/layout.svg";
+export { default as starIcon } from "/images/star.svg";
+export { default as codeIcon } from "/images/code.svg";
+export { default as phoneIcon } from "/images/phone.svg";
+export { default as shopIcon } from "/images/shop.svg";
+export { default as graphIcon } from "/images/graph.svg";
