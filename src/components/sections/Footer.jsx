@@ -1,3 +1,6 @@
+import logoDark from "/images/logo-dark.png";
+import logoLight from "/images/logo-light.png";
+
 function Footer({ darkMode }) {
   return (
     <footer>
@@ -7,7 +10,7 @@ function Footer({ darkMode }) {
             <div className="w-32 md:w-28">
               <img
                 className="max-w-full"
-                src={`/images/logo-${darkMode ? "light" : "dark"}.png`}
+                src={darkMode ? logoLight : logoDark}
                 alt="logo"
               />
             </div>

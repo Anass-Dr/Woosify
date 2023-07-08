@@ -1,4 +1,6 @@
 import Btn from "./global/Btn";
+import logoDark from "/images/logo-dark.png";
+import logoLight from "/images/logo-light.png";
 
 function Navbar({ darkMode, handleTheme, handleNav }) {
   return (
@@ -6,7 +8,7 @@ function Navbar({ darkMode, handleTheme, handleNav }) {
       <div className="w-28">
         <img
           className="max-w-full"
-          src={`/images/logo-${darkMode ? "light" : "dark"}.png`}
+          src={darkMode ? logoLight : logoDark}
           alt="logo"
         />
       </div>
